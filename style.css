@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Wrapper */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #002B5C 0%, #4D72AD 100%);
+    padding: 10px 20px;
+}
+
+.navbar .navbar-brand {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    color: white;
+    margin-right: 15px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh; /* Memenuhi layar penuh */
+    background-image: url("img/GIF1.gif"); /* GIF sebagai background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Overlay pada Hero agar teks terbaca */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Gambar GIF sebagai bagian Hero (jika bukan background) */
+.hero-gif {
+    width: 100%; /* Memenuhi layar seperti Carousel */
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Tabel Anggota */
+.anggota-container {
+    padding: 50px 20px;
+}
+
+/* Gaya Tabel */
+.table {
+    background-color: white;
+    border: 2px solid whitesmoke;
+}
+
+.table th {
+    background-color: #4D72AD;
+    color: white;
+    font-size: 18px;
+}
+
+.table td {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* Gambar dalam Tabel */
+.table-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tombol dalam Tabel */
+.table .btn {
+    background-color: #2575fc;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    
+}
+
+.table .btn:hover {
+    background-color: #6a11cb;
+}
+
+/* Profil */
+.profile-container {
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+.profile-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #002B5C 0%, #4D72AD 100%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Berita */
+.berita-container {
+    padding: 50px 20px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+
