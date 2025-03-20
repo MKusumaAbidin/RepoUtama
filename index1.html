@@ -108,6 +108,25 @@
             </map>
         </div>
 
+        <!-- JavaScript -->
+        <div class="container text-center mt-5">
+            <h2 id="judul">Klik tombol untuk mengubah warna teks ini!</h2>
+            
+            <p>
+                <button type="button" class="btn btn-primary" onclick="ubahWarna()">Ubah Warna</button>
+            </p>
+        </div>
+
+        <script>
+        function ubahWarna() {
+            var warna = ["red", "blue", "green", "purple", "orange"];
+            var randomWarna = warna[Math.floor(Math.random() * warna.length)];
+            document.getElementById("judul").style.color = randomWarna;
+        }
+        </script>
+
+
+
     <!-- Footer -->
     <footer class="footer">
         <h5>&copy; 2025 Kelompok WEB - Praktikum Pemrograman Web</h5>
